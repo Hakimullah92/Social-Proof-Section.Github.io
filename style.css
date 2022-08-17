@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,500;0,800;1,200;1,500;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+   font-size: 62.5%;
+   scroll-behavior:smooth;
+}
+body
+{
+    font-family: 'Poppins', sans-serif;
+}
+ /* =========Desktop View Styling End========= */
+
+.container{
+    max-width: 1200px;
+    width: 95%;
+    /* height: 100vh; */
+    margin:0 auto;
+    padding: 6rem;
+    background:url(/images/bg-pattern-top-desktop.svg);
+    background-size: 100% 100%;
+}
+/* ############## Products Styling Start ############ */
+
+.container .products-box{
+    display: flex;
+    align-items: center;
+    gap: 15rem;
+}
+.product-text{
+    flex-basis: 35rem;
+} 
+.product-text h1{
+    font-size: 3.5rem;
+    text-transform: capitalize;
+    color:#301934;
+    line-height: 4rem;
+    
+}
+.product-text p{
+    font-size: 1.3rem;
+    color:#310E68;
+    margin-top: 1rem;
+}
+
+.container .product-reviews{
+    flex-basis: 40rem;
+    
+}
+.products-box .review{
+    background:#eee;
+    padding: 1rem 2rem;
+   display: flex;
+   align-items: center;
+   gap: 2rem;
+   border-radius: 6px;
+   margin-bottom: 2rem;
+}
+.products-box .r1{
+    transform: translateX(-10%);
+}
+.products-box .r3{
+    transform: translateX(10%);
+}
+
+.review .stars i{
+    color:goldenrod;
+    font-size: 2rem;
+}
+.review h4{
+    font-size: 1.5rem;
+    color: #301934;
+}
+/* ############## Products Styling End ############ */
+
+
+ /* Cards Styling starts */
+ .cards-container{
+    margin-top: 7rem;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+ }
+ .cards-container .card{
+   border-radius: 7px;
+    padding: 3rem;
+    background:#301934;
+
+ }
+ .card .profile{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+ }
+ .card .profile img{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+
+ }
+ .card .profile .name h3{
+    font-size: 1.4rem;
+    text-transform: capitalize;
+    color: #fff;
+ }
+ .card .profile .name h4{
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    color:palevioletred;
+ }
+ .card p{
+    margin-top: 2rem;
+    color: #fff;
+    font-size: 1.2rem;
+ }
+ .cards-container .c1{
+    transform: translateY(-8%);
+ }
+ .cards-container .c3{
+    transform: translateY(10%);
+ }
+ /* #########Cards Styling starts #############*/
+
+ /* =========Desktop View Styling End========= */
+
+
+
+/* ================= Mobile View =============== */
+ /* ################# max-width :374px ############## */
+
+
+
+/* ################ Media Query Start ############## */
+
+ @media screen and (max-width:374px){
+    .container{
+        width: 100%;
+        padding:1rem 3rem 3rem 3rem;
+          }
+    .products-box{
+         flex-wrap: wrap;
+       }
+    .product-text{
+        flex-basis: 40rem;
+        text-align: center;
+    } 
+    .product-text h1{
+        font-size: 3rem;
+    }
+    .product-reviews{
+        margin-top: -7rem;
+    }
+    .products-box .r1{
+        transform: translateX(0%);
+    }
+    .products-box .r3{
+        transform: translateX(0%);
+    }
+    .products-box .review{
+        display: block;
+        text-align: center;    
+    }
+    .review .stars i{
+        color:goldenrod;
+        font-size: 1.6rem;
+    }
+    .review h4{
+     font-size: 1.8rem;
+    }
+    .cards-container{
+       flex-wrap: wrap;
+       margin-top: 5rem;
+       gap: 1rem;
+     }
+     .cards-container .c1{
+        transform: translateY(0%);
+     }
+     .cards-container .c3{
+        transform: translateY(0%);
+     }
+ }
+ 
+/* ################ Media Query End ############## */
